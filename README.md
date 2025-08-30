@@ -28,7 +28,7 @@ index.html
 css/
 	style.css
 images/
-	[various images]
+	[images]
 js/
 	form.js
 	menu.js
