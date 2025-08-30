@@ -9,23 +9,37 @@
 <body>
   <header>
     <h1>Gallery</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="developers.html">Developers</a>
-      <a href="attractions.html">Attractions</a>
-      <a href="history.html">History</a>
-      <a href="events.html">Events</a>
-      <a href="gallery.html">Gallery</a>
+    <nav id="main-nav">
+     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+     <ul id="menu" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About New Zealand</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="attractions.html">Top Attractions</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
     </nav>
   </header>
   <main>
-    <h2>Photos of Sampletown</h2>
-    <p>[Add images of the town here]</p>
+    <div class="slider">                                                                    <!----- image slider section---->
+      <img src="images/queenstown.festival.jpeg" class="slide" height="400" width="400"/>
+      <img src="images/hobbiton.jpg" class="slide hidden" height="400" width="400"/>
+      <img src="images/mount cook.jpeg" class="slide hidden" height="400" width="400"/>
+      <img src="images/rotorua.jpg" class="slide" height="400" width="400"/>
+      <img src="images/milford.sound.jpg" class="slide hidden" height="400" width="400"/>
+      <img src="images/waitangi.day.jpg" class="slide hidden" height="400" width="400"/>
+      <img src="images/TongariroTwo.png" class="slide hidden" height="400" width="400"/>
+      <button id="prev">‹</button>
+      <button id="next">›</button>
+    </div>
   </main>
   <footer>
     <p>&copy; 2025 Sampletown</p>
   </footer>
+  <button id="to-top" class="arrow">↑ Top</button>
+  <script src="js/menu.js"></script>                                <!--- Toggle menu bar script --->
+  <script src="js/script.js"></script>                              <!--- Gallery script --->
 </body>
 </html>

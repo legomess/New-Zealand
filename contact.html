@@ -9,29 +9,36 @@
 <body>
   <header>
     <h1>Contact Sampletown</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="developers.html">Developers</a>
-      <a href="attractions.html">Attractions</a>
-      <a href="history.html">History</a>
-      <a href="events.html">Events</a>
-      <a href="gallery.html">Gallery</a>
+    <nav id="main-nav">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About New Zealand</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="attractions.html">Top Attractions</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
   </header>
   <main>
+    <section class = "contact">
     <h2>Contact Us</h2>
     <form id="contactForm">
-      <label>Name:<br><input type="text" name="name" required></label><br>
-      <label>Email:<br><input type="email" name="email" required></label><br>
-      <label>Message:<br><textarea name="message" required></textarea></label><br>
+      <label>Name:<br><input type="text" name="name" ></label><br>
+      <label>Email:<br><input type="email" name="email"></label><br>
+      <label>Message:<br><textarea name="message"></textarea></label><br>
       <button type="submit">Preview Message</button>
     </form>
-    <div id="preview"></div>
+    <div id="preview"> </div>
+  </section>
   </main>
   <footer>
     <p>&copy; 2025 Sampletown</p>
   </footer>
+  <button id="to-top" class="arrow">↑ Top</button>
+  <script src="js/menu.js"></script>                                  <!--- Toggle menu bar script --->                        
+  <script src="js/form.js"></script>                                  <!--- form validation script --->
 </body>
 </html>
